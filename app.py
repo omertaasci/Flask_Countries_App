@@ -19,7 +19,7 @@ def get_country_info(country_name):
                 'area':  "{:,}".format(data[0]['area']),
                 'currencies': ', '.join(data[0]['currencies'].keys()),
                 'languages': ', '.join(data[0]['languages'].keys()),
-                'flag_url': data[0]['flags']['png'],  # Assuming your data source provides a 'flags' field with PNG URL
+                'flag_url': data[0]['flags']['png'], 
             }
 
             return country_info
